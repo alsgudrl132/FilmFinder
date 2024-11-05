@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002FFilmFinder\u002F_nuxt\u002Fstatic\u002F1730796122",layout:"default",error:a,state:{state:{title:""}},serverRendered:true,routePath:"\u002F",config:{_app:{basePath:"\u002FFilmFinder\u002F",assetsPath:"\u002FFilmFinder\u002F_nuxt\u002F",cdnURL:a}}}}(null));
