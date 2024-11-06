@@ -5,7 +5,7 @@ export default {
 	},
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: 'filmfinder',
+		title: 'FilmFinder',
 		htmlAttrs: {
 			lang: 'en',
 		},
@@ -15,7 +15,7 @@ export default {
 			{ hid: 'description', name: 'description', content: '' },
 			{ name: 'format-detection', content: 'telephone=no' },
 		],
-		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+		link: [{ rel: 'icon', type: 'image/x-icon', href: '/logo.svg' }],
 	},
 	// Global CSS: https://go.nuxtjs.dev/config-css
 	css: [],
