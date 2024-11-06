@@ -44,4 +44,7 @@ export default {
 	env: {
 		apiToken: process.env.VUE_APP_API_TOKEN, // .env 파일에서 apiToken을 가져옵니다.
 	},
+	server: {
+		port: 8000,
+	},
 }
