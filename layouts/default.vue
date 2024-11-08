@@ -40,14 +40,30 @@
 						{{ tvGenre.name }}
 					</option>
 				</select>
-				<input
-					v-model="title"
-					type="text"
-					class="search-input"
-					placeholder="영화 이름 검색"
-					@keypress.enter="getMovieTvToTitle"
-				/>
-				<button class="search-button" @click="getMovieTvToTitle">검색</button>
+				<div v-if="selectedCategory === '영화'">
+					<input
+						v-model="title"
+						type="text"
+						class="search-input"
+						placeholder="영화 이름 검색"
+						@keypress.enter="getMovieTvToTitle('movie')"
+					/>
+					<button class="search-button" @click="getMovieTvToTitle('movie')">
+						검색
+					</button>
+				</div>
+				<div v-if="selectedCategory === 'TV 시리즈'">
+					<input
+						v-model="title"
+						type="text"
+						class="search-input"
+						placeholder="TV 시리즈 이름 검색"
+						@keypress.enter="getMovieTvToTitle('tv')"
+					/>
+					<button class="search-button" @click="getMovieTvToTitle('tv')">
+						검색
+					</button>
+				</div>
 			</div>
 		</nav>
 		<nuxt />
@@ -91,9 +107,9 @@ export default {
 				this.$router.push(`/${option}/genre/${findGenre.id}`)
 			}
 		},
-		getMovieTvToTitle() {
+		getMovieTvToTitle(option) {
 			if (this.selectedCategory === '영화') {
-				EventBus.$emit('getMovieTvToTitle', this.title)
+				EventBus.$emit(option, 'getMovieTvToTitle', this.title)
 				this.$router.push({
 					path: '/movie/search',
 					query: { search: this.title },

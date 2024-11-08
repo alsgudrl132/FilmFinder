@@ -62,7 +62,7 @@
 							:key="actor.id"
 							class="cast-card"
 						>
-							<nuxt-link :to="`/movie/castermovie/${actor.name}`">
+							<nuxt-link :to="`/tv/castermovie/${actor.name}`">
 								<div class="cast-image">
 									<img
 										:src="`https://image.tmdb.org/t/p/w185${actor.profile_path}`"
