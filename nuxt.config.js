@@ -3,9 +3,11 @@ export default {
 	router: {
 		base: '/FilmFinder/',
 	},
+	ssr: false,
 	buildDir: 'dist',
 	generate: {
 		dir: 'dist',
+		fallback: true,
 	},
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
