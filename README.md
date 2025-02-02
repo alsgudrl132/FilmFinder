@@ -36,4 +36,4 @@ FilmFinder는 영화 애호가들을 위한 종합 영화 정보 검색 플랫�
 - **영화 상세 페이지**: 종합 정보 및 관련 콘텐츠
 
 ## 🔗 API 참고 문서
-- [TMDB API 문서](링크)
+- [TMDB API 문서](https://developer.themoviedb.org/docs)
