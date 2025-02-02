@@ -1,68 +1,39 @@
-# filmfinder
+# 🎬 FilmFinder
 
-## Build Setup
+> 영화 탐색 도우미
 
-```bash
-# install dependencies
-$ npm install
+## 🎯 프로젝트 소개
+FilmFinder는 영화 애호가들을 위한 종합 영화 정보 검색 플랫폼입니다. 영화 제목, 배우, 장르별로 손쉽게 영화를 찾고 상세한 정보를 확인할 수 있습니다.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## ✨ 주요 기능
+### 🔍 다양한 검색 옵션
+- 영화 제목 검색
+- 배우/감독 필터링
+- 장르별 분류 검색
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+### 📝 상세 영화 정보
+- 영화 줄거리 및 기본 정보
+- 출연 배우 및 제작진 정보
+- 평점 및 리뷰 데이터
+- 관련 영화 추천
 
-# generate static project
-$ npm run generate
-```
+### 🎭 배우/감독 프로필
+- 출연/제작 작품 목록
+- 상세 프로필 정보
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## 🛠️ 기술 스택
+### Frontend
+- Vue.js
+- Nuxt.js
+- Vuex (상태 관리)
 
-## Special Directories
+### API
+- TMDB API (영화 데이터)
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+## 📱 화면 구성
+- **메인 페이지**: 인기 영화, 최신 영화, 장르별 추천
+- **검색 결과 페이지**: 필터링 및 정렬 옵션
+- **영화 상세 페이지**: 종합 정보 및 관련 콘텐츠
 
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+## 🔗 API 참고 문서
+- [TMDB API 문서](링크)
